@@ -1,0 +1,277 @@
+/* === Spring Energy Theme (with strong yellow visibility) === */
+:root {
+    /* Core spring tones */
+    --spring-lime: #89F336;
+    --spring-lemon: #FFFC30;
+    --spring-aqua: #4FE0CB;
+    --spring-green: #00BF33;
+
+    /* Readable ink when using yellow accents on dark */
+    --spring-lemon-ink: #0b0b0b;
+
+    /* Neutrals for dark background */
+    --spring-bg-1000: #0f1a1200;
+    --spring-bg-950: #13241600;
+    --spring-bg-900: #162b1b00;
+    --spring-bg-850: #192f1e00;
+    --spring-bg-800: #1d352200;
+    --spring-bg-700: #20402700;
+
+    /* Component tokens */
+    --oc-bg: var(--spring-bg-1000);
+    --oc-bg-2: #0e150f;
+    --oc-text: #eaffea;
+    --oc-muted: rgba(234, 255, 234, 0.78);
+    --oc-card: var(--spring-bg-950);
+    --oc-border: rgba(0, 191, 51, 0.26);
+    /* stronger for contrast */
+    --oc-input: var(--spring-bg-900);
+
+    /* Accents */
+    --oc-accent: var(--spring-aqua);
+    --oc-accent-2: var(--spring-lime);
+    --oc-glow: rgba(79, 224, 203, 0.26);
+
+    /* Yellow emphasis borders/shadows */
+    --lemon-ring: rgba(255, 252, 48, 0);
+    --lemon-border: rgba(255, 252, 48, 0);
+    --lemon-wash: rgba(255, 252, 48, 0.12);
+}
+
+/* Global */
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    background:
+        radial-gradient(1200px 520px at 8% -10%, rgba(255, 252, 48, .12), transparent 60%),
+        radial-gradient(1000px 520px at 105% 0%, rgba(79, 224, 203, .14), transparent 55%),
+        radial-gradient(900px 520px at 50% 100%, rgba(137, 243, 54, .10), transparent 50%),
+        linear-gradient(180deg, var(--spring-bg-1000) 0%, var(--spring-bg-950) 58%, var(--spring-bg-900) 100%);
+    color: var(--oc-text);
+    font-family: "Inter", "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Cards — boosted contrast so yellow pops */
+.card {
+    background:
+        linear-gradient(180deg, var(--spring-bg-950), var(--spring-bg-900));
+    border: 1px solid var(--oc-border);
+    border-radius: 12px;
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, .38),
+        0 0 0 1px rgba(255, 255, 255, .035) inset;
+    position: relative;
+}
+
+.glass {
+    backdrop-filter: saturate(1.08) blur(8px);
+    -webkit-backdrop-filter: saturate(1.08) blur(8px);
+}
+
+/* Lemon-emphasis card variant */
+.card--lemon {
+    background:
+        linear-gradient(180deg, var(--spring-bg-950), var(--spring-bg-900)),
+        radial-gradient(420px 180px at 10% -20%, var(--lemon-wash), transparent 70%);
+    border-color: var(--lemon-border);
+    box-shadow:
+        0 14px 32px rgba(0, 0, 0, .4),
+        0 0 0 1px rgba(255, 255, 255, .04) inset,
+        0 0 0 2px var(--lemon-wash) inset;
+}
+
+.hero-card {
+    background:
+        radial-gradient(640px 300px at 30% -20%, var(--oc-glow), transparent 70%),
+        radial-gradient(560px 240px at 80% -30%, var(--lemon-wash), transparent 70%),
+        linear-gradient(180deg, var(--spring-bg-950), var(--spring-bg-900));
+    border: 1px solid var(--oc-border);
+    border-radius: 16px;
+}
+
+/* Visualization tile */
+.hero-viz {
+    height: 260px;
+    border-radius: 16px;
+    border: 1px solid var(--oc-border);
+    background:
+        radial-gradient(circle at 24% 24%, rgba(137, 243, 54, .28) 0 26%, transparent 27%),
+        radial-gradient(circle at 72% 70%, rgba(79, 224, 203, .35) 0 32%, transparent 33%),
+        radial-gradient(circle at 86% 24%, rgba(255, 252, 48, .34) 0 22%, transparent 23%),
+        linear-gradient(135deg, var(--spring-bg-850), var(--spring-bg-700));
+    box-shadow: 0 18px 46px rgba(0, 0, 0, .45), inset 0 0 40px rgba(255, 252, 48, .08);
+}
+
+/* Typography */
+.title-xl {
+    color: var(--oc-text);
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.lead {
+    color: var(--oc-muted);
+}
+
+.muted {
+    color: var(--oc-muted);
+}
+
+.small {
+    font-size: .9rem;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="search"],
+.input-elevated,
+textarea {
+    background: var(--oc-input);
+    color: var(--oc-text);
+    border: 1px solid var(--oc-border);
+    border-radius: 12px;
+    padding: 10px 12px;
+    outline: none;
+    transition: all .2s ease;
+}
+
+input:focus,
+textarea:focus,
+.input-elevated:focus {
+    border-color: var(--spring-aqua);
+    box-shadow: 0 0 0 3px rgba(79, 224, 203, .25);
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--spring-lemon-ink);
+    background: linear-gradient(135deg, var(--spring-lemon), var(--spring-lime));
+    border: 1px solid var(--lemon-border);
+    box-shadow: 0 10px 26px rgba(255, 252, 48, .25);
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 34px rgba(255, 252, 48, .32);
+}
+
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--oc-text);
+    background: linear-gradient(180deg, var(--spring-bg-900), var(--spring-bg-950));
+    border: 1px solid var(--oc-border);
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(180deg, var(--spring-bg-800), var(--spring-bg-850));
+    border-color: var(--spring-aqua);
+    transform: translateY(-1px);
+}
+
+.btn-ghost {
+    background: transparent;
+    border: 1px solid var(--oc-border);
+}
+
+.btn-ghost:hover {
+    background: rgba(255, 252, 48, .08);
+    border-color: var(--lemon-border);
+}
+
+/* Lemon badge and divider utilities */
+.badge-lemon {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    color: var(--spring-lemon-ink);
+    background: linear-gradient(135deg, var(--spring-lemon), #ffe95c);
+    border: 1px solid var(--lemon-border);
+    box-shadow: 0 6px 18px rgba(255, 252, 48, .22);
+}
+
+.hr-lemon {
+    height: 1px;
+    border: none;
+    background: linear-gradient(90deg, transparent, var(--spring-lemon), transparent);
+    opacity: .45;
+}
+
+/* Feature grid */
+.features {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+}
+
+/* Info row with clear lemon highlight */
+.info-row {
+    padding: 16px;
+    margin-top: 16px;
+    border: 1px solid var(--oc-border);
+    border-radius: 12px;
+    background:
+        linear-gradient(180deg, var(--spring-bg-950), var(--spring-bg-900)),
+        radial-gradient(520px 160px at 5% -20%, var(--lemon-wash), transparent 70%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.info-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--lemon-border);
+    background: rgba(255, 252, 48, .10);
+    color: var(--oc-text);
+}
+
+/* Focus */
+a:focus,
+button:focus,
+[tabindex]:focus {
+    outline: 2px solid var(--spring-lemon);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px var(--lemon-ring);
+}
+
+/* Responsive */
+@media (max-width: 820px) {
+    .hero-viz {
+        height: 200px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .info-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
