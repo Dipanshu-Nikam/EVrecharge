@@ -1,7 +1,3 @@
-# Admin login details
-gmail login: danavtheinsider@gmail.com
-password : @Danav03
-
 # user login/Onwer
  create accounts 
 
