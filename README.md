@@ -133,6 +133,21 @@ EVrecharge/
 
 ---
 
+## 🔄 Application Flow
+
+The EVrecharge platform follows a simple flow:
+
+1. User registers or logs in.
+2. User searches for available EV charging stations.
+3. User views station details and location.
+4. User selects a suitable charging slot.
+5. User makes a booking.
+6. User completes the payment.
+7. User can manage bookings and profile information.
+
+Station owners can manage their charging stations and bookings, while administrators can manage users, stations, bookings, payments, and analytics.
+
+---
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the Repository
