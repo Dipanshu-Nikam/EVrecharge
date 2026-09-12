@@ -133,15 +133,6 @@ EVrecharge/
 
 ---
 
-## 2. Fix Installation & Setup
-
-Replace everything from:
-
-**`## ⚙️ Installation & Setup`**
-
-through the end of the README with this:
-
-````markdown
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the Repository
