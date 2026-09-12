@@ -245,3 +245,29 @@ While building EVrecharge, I gained practical experience in:
 - Testing backend APIs using Jest and Supertest
 
 ---
+
+## 🔮 Future Improvements
+
+- Add real-time charging station availability
+- Improve station search and filtering
+- Add more payment options
+- Add advanced analytics and reporting
+- Improve mobile responsiveness
+- Add automated notifications
+- Deploy the application to a cloud platform
+
+---
+
+## 👨‍💻 Developer
+
+**Dipanshu Nikam**
+
+BCA Graduate | Aspiring Full-Stack & Cloud Developer
+
+📍 Pune, Maharashtra
+
+🔗 GitHub: [Dipanshu-Nikam](https://github.com/Dipanshu-Nikam)
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
