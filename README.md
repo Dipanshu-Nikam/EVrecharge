@@ -148,6 +148,7 @@ The EVrecharge platform follows a simple flow:
 Station owners can manage their charging stations and bookings, while administrators can manage users, stations, bookings, payments, and analytics.
 
 ---
+
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the Repository
