@@ -228,3 +228,20 @@ Connected the React frontend with the Node.js/Express backend using REST APIs an
 Implemented notification functionality to provide users with important application updates.
 
 ---
+
+## 📚 What I Learned
+
+While building EVrecharge, I gained practical experience in:
+
+- Building a full-stack web application
+- Developing REST APIs with Node.js and Express.js
+- Connecting React frontend with backend APIs
+- Implementing authentication and authorization
+- Working with Firebase and Firestore
+- Integrating payment services
+- Implementing maps and location-based features
+- Applying backend security practices
+- Managing frontend and backend project structure
+- Testing backend APIs using Jest and Supertest
+
+---
