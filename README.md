@@ -149,6 +149,14 @@ Station owners can manage their charging stations and bookings, while administra
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Home Page
+
+![EVrecharge Home Page](screenshots/home.png)
+
+---
+
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the Repository
